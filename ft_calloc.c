@@ -1,16 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_colloc.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lrieklin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 20:49:33 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/10/27 21:56:52 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/11 23:45:00 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
@@ -18,7 +17,9 @@ void	*ft_calloc(size_t count, size_t size)
 	char	*new_elem;
 	size_t	i;
 
-	i = 0;
+	i = 0; 
+	if (size && SIZE_MAX/size < count)
+		return (NULL);
 	new_elem = (char *)malloc(count * size);
 	if (new_elem)
 	{

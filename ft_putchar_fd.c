@@ -6,11 +6,11 @@
 /*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:23:33 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/10/27 23:26:42 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/11 12:51:35 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);

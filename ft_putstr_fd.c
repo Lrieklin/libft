@@ -6,7 +6,7 @@
 /*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 22:33:58 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/10/27 23:00:00 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/11 20:24:51 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,10 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
+	size_t	t;
 
-	i = 0;
 	if (s == NULL)
 		return ;
-	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
+	t = ft_strlen(s);
+	write(fd, s, (int)t);
 }

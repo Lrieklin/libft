@@ -6,14 +6,13 @@
 /*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 22:57:23 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/10/27 22:57:26 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/11 16:10:33 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t		i;
 	char		*new_dst;

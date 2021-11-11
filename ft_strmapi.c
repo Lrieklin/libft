@@ -6,7 +6,7 @@
 /*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 16:39:05 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/10/27 23:23:27 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/11 23:49:41 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*new_str;
 
 	i = 0;
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	new_str = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!new_str)

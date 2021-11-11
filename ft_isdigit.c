@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lrieklin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 22:16:13 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/10/11 22:17:21 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/11 12:48:17 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
