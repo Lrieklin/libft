@@ -6,7 +6,7 @@
 /*   By: lrieklin <lrieklin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 19:18:58 by lrieklin          #+#    #+#             */
-/*   Updated: 2021/11/11 12:58:04 by lrieklin         ###   ########.fr       */
+/*   Updated: 2021/11/12 22:30:16 by lrieklin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static char	*ft_wd(const char *str, char c)
 	return (wd);
 }
 
-void	free_word(int i, char **ptr)
+static	void	free_word(int i, char **ptr)
 {
 	while (i > 0)
 	{

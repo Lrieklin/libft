@@ -26,14 +26,14 @@ CC		=	gcc
 
 CFLAGS	=	-Wall -Wextra -Werror -I $(HEADER)
 
-.PHONY	:	all clean fclean re bonus
+.PHONY	:	all clean fclan re bonus
 
 all		:	$(NAME)
 
 $(NAME)	:	$(OBJ) $(HEADER)
 		ar rcs $(NAME) $?
 
-.c.o :	$(HEADER)
+%.o :	%.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus :
